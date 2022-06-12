@@ -1,2 +1,72 @@
 
- 
+ @import 'reset.scss';
+//  @import 'fonts';
+ @import 'header.scss';
+  
+
+ body {
+    font-family: 'Rubik',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.185;
+    color: #536473;
+    background: #F6F9FC;
+ }
+ .title {
+    font-family: 'Rubik',sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.184;
+    color: #45515F;
+ }
+ .container {
+    max-width: 1283px;
+    padding: 10px;
+    margin: 0 auto;
+}
+/////////////////////////////////////// hero ///////////////////////////////////
+.hero {
+    padding: 100px 0 ;
+    background: linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+}
+.hero__title {
+    max-width: 477px;
+}
+.hero__title-inner {
+    font-family: 'Rubik',sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.125;
+    color: white;
+    margin-bottom: 15px;
+    span {
+        display: block;
+        position: relative;
+        padding: 15px 23px 15px 75px;
+        text-align: right;
+        font-family: 'Rubik',sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.81;
+        color: #3C4260;
+        background: white;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+}
+.hero__subtitle {
+    font-family: 'Rubik',sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.333;
+    color: white;
+    margin-bottom: 110px;
+}
+.hero__text {
+    font-family: 'Rubik',sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.428;
+    color: white;
+    
+}

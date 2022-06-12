@@ -2,6 +2,7 @@ import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import rename from 'gulp-rename';
 
+import map from 'gulp-sourcemaps';
 import cleanCss from 'gulp-clean-css';
 import webpcss from 'gulp-webpcss';
 import autoprefixer from 'gulp-autoprefixer';
@@ -42,11 +43,18 @@ export const scss = () => {
            cascade: true
        })
        ))
-       .pipe(app.gulp.dest(app.path.build.css))
-       .pipe(cleanCss())
-       .pipe(rename({
-           extname: ".min.css"
-       }))
+       .pipe(app.plugins.if(
+        app.isDev,
+        map.write('../sourcemaps/')
+    ))
+       .pipe(app.gulp.dest(app.path.build.css))//раскомментировать если нужен не сжатый дубль файла
+       .pipe(app.plugins.if(
+        app.isBuild,
+        cleanCss()
+    ))
+    .pipe(rename({
+        extname: '.min.css'
+    }))
        .pipe(app.gulp.dest(app.path.build.css))
        .pipe(app.plugins.browsersync.stream());
 }
