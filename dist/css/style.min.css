@@ -46,11 +46,11 @@ select {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+  background: transparent;
 }
 
 .header-container {
@@ -107,19 +107,37 @@ body {
 
 .container {
   max-width: 1283px;
-  padding: 10px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
 .hero {
   padding: 100px 0;
-  background: linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+  background: url("../img/hero/background__hero.png") no-repeat 56% 50%, url("../img/hero/background__hero_1.png") no-repeat 20% 100%, url("../img/hero/background__hero_2.png") no-repeat 14% 100%, url("../img/hero/background__hero_3.png") no-repeat 1% 100%, url("../img/hero/background__hero_4.png") no-repeat 0% 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
 }
 
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .hero__wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .hero__title {
+  display: inline-block;
   max-width: 477px;
 }
 
+@media (max-width: 1200px) {
+  .hero__title {
+    max-width: 100%;
+  }
+}
 .hero__title-inner {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
@@ -127,11 +145,19 @@ body {
   line-height: 1.125;
   color: white;
   margin-bottom: 15px;
+  /*
+  span img {
+      position: absolute;
+      top: -11px;
+      left: 10px;
+      width: 56px;
+      height: 56px;
+  }*/
 }
 .hero__title-inner span {
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 15px 23px 15px 75px;
+  padding: 8px 23px 8px 75px;
   text-align: right;
   font-family: "Rubik", sans-serif;
   font-size: 22px;
@@ -141,6 +167,15 @@ body {
   background: white;
   border-radius: 12px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.hero__title-inner span::before {
+  position: absolute;
+  content: url("../img/hero/fire 1.png");
+  top: -11px;
+  left: 10px;
+  width: 56px;
+  height: 56px;
 }
 
 .hero__subtitle {
@@ -158,5 +193,29 @@ body {
   font-weight: 300;
   line-height: 1.428;
   color: white;
+  text-align: left;
+  max-width: 300px;
+}
+
+.hero__items {
+  position: relative;
+}
+
+.hero__image {
+  display: inline-block;
+  position: absolute;
+  bottom: -101px;
+  left: -468px;
+}
+
+.hero__item {
+  display: inline-block;
+}
+
+.hero__item-inner {
+  width: 428px;
+  height: 582px;
+  border-radius: 10px;
+  background: white;
 }
 /*# sourceMappingURL=../sourcemaps/style.css.map */

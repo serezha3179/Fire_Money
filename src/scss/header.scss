@@ -1,9 +1,10 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+    // background: linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+    background: transparent;
 
 }
 .header-container {
