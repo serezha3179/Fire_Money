@@ -65,6 +65,11 @@ select {
   align-items: center;
 }
 
+@media (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__list {
   display: flex;
 }
@@ -113,19 +118,30 @@ body {
 
 .hero {
   padding: 100px 0;
-  background: url("../img/hero/background__hero.png") no-repeat 56% 50%, url("../img/hero/background__hero_1.png") no-repeat 20% 100%, url("../img/hero/background__hero_2.png") no-repeat 14% 100%, url("../img/hero/background__hero_3.png") no-repeat 1% 100%, url("../img/hero/background__hero_4.png") no-repeat 0% 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+  background: url("../img/hero/background__hero.png") no-repeat 56% 50%, url("../img/hero/background__hero_1.png") no-repeat 20% 100%, url("../img/hero/background__hero_2.png") no-repeat 14% 100%, url("../img/hero/background__hero_3.png") no-repeat 1% 100%, url("../img/hero/background__hero_4.png") no-repeat 0% 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, url("../img/hero/background__hero.png") no-repeat 56% 50%, url("../img/hero/background__hero_1.png") no-repeat -20px 100%, url("../img/hero/background__hero_2.png") no-repeat -20px 100%, url("../img/hero/background__hero_3.png") no-repeat -20px 100%, url("../img/hero/background__hero_4.png") no-repeat -20px 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    overflow: hidden;
+    background: url("../img/hero/background__hero.png") no-repeat 56% 50%/756px, url("../img/hero/background__hero_1.png") no-repeat 20% 100%, url("../img/hero/background__hero_2.png") no-repeat 14% 100%, url("../img/hero/background__hero_3.png") no-repeat -100px 100%, url("../img/hero/background__hero_4.png") no-repeat -100px 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+  }
+}
+@media (max-width: 830px) {
+  .hero {
+    padding: 100px 0 12px;
+    background: url("../img/hero/background__hero.png") no-repeat 56% 80%/756px, url("../img/hero/background__hero_1.png") no-repeat 20% 100%, url("../img/hero/background__hero_2.png") no-repeat 14% 100%, url("../img/hero/background__hero_3.png") no-repeat -100px 100%, url("../img/hero/background__hero_4.png") no-repeat -100px 100%, url("../img/hero/background__hero_5.png") no-repeat 100% 100%, linear-gradient(278.04deg, #FFC83E 31.99%, #FF9F47 81.27%);
+  }
+}
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 @media (max-width: 1200px) {
   .hero__wrapper {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 .hero__title {
@@ -136,6 +152,7 @@ body {
 @media (max-width: 1200px) {
   .hero__title {
     max-width: 100%;
+    margin-bottom: 50px;
   }
 }
 .hero__title-inner {
@@ -178,7 +195,19 @@ body {
   height: 56px;
 }
 
+@media (max-width: 1200px) {
+  .hero__title-inner {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__title-inner span {
+    display: block;
+    max-width: 391px;
+    margin: 0 auto 20px;
+  }
+}
 .hero__subtitle {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-size: 27px;
   font-weight: 400;
@@ -187,7 +216,15 @@ body {
   margin-bottom: 110px;
 }
 
+@media (max-width: 1200px) {
+  .hero__subtitle {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 .hero__text {
+  display: inline-block;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -197,10 +234,35 @@ body {
   max-width: 300px;
 }
 
+@media (max-width: 1200px) {
+  .hero__text {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .hero__items {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .hero__items {
+    left: calc(50% - 27px);
+    width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  .hero__items {
+    left: calc(50% - 219px);
+    width: auto;
+  }
+}
+@media (max-width: 766px) {
+  .hero__items {
+    display: inline-block;
+    left: inherit;
+  }
+}
 .hero__image {
   display: inline-block;
   position: absolute;
@@ -208,6 +270,19 @@ body {
   left: -468px;
 }
 
+@media (max-width: 830px) {
+  .hero__image {
+    width: 534px;
+    /* height: 762px; */
+    bottom: -11px;
+    left: -422px;
+  }
+}
+@media (max-width: 766px) {
+  .hero__image {
+    display: none;
+  }
+}
 .hero__item {
   display: inline-block;
 }
