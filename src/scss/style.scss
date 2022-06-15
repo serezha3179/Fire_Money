@@ -285,6 +285,7 @@
 
 .offer {
     padding: 49px 0px;
+    background: #F6F9FC;
 }
 .offer__title {
     font-family: 'Rubik',sans-serif;
@@ -293,4 +294,30 @@
     line-height: 1.185;
     text-align: center;
     color: #45515F;
+    margin-bottom: 36px;
+}
+.offer__cards {
+    display: flex;
+    margin: 0px -14px;
+    margin-bottom: 33px;
+}
+.offer__card {
+    flex: 0 1 33.333%;
+    padding: 36px 73px 36px 68px;
+    margin: 0px 14px;
+    background: white;
+    border-radius: 22px;
+}
+.offer__card-title {
+
+}
+
+
+.offer__text {
+    font-family: 'Rubik',sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.461;
+    color: #45515F;
+    text-align: center;
 }
