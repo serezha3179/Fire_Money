@@ -303,16 +303,56 @@
 }
 .offer__card {
     flex: 0 1 33.333%;
-    padding: 36px 73px 36px 68px;
+    padding: 36px 57px 36px 57px;
     margin: 0px 14px;
     background: white;
     border-radius: 22px;
 }
+
 .offer__card-title {
-
+    font-family: 'Rubik',sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.185;
+    color: #45515F;
 }
-
-
+.offer__card:nth-child(1) .offer__card-title span {
+    color: #FFC83E;
+}
+.offer__card:nth-child(2) .offer__card-title span {
+    color: #FF7B00;
+}
+.offer__card:nth-child(3) .offer__card-title span {
+    color: #FA5914;
+}
+.offer__card-item {
+    position: relative;
+    left: 20px;
+    font-family: 'Rubik',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.82;
+    span {
+        font-weight: 500;
+        color: #45515F;
+    }
+}
+.offer__card-item::before {
+    position: absolute;
+    content: url('@img/offer/Ruble_symbol.png');
+    top: 0px;
+    left: -16px;
+    width: 12px;
+    height: 11px;
+}
+.offer__card-item.card-item__calendar::before {
+    position: absolute;
+    content: url('@img/offer/calendar.png');
+    top: 0px;
+    left: -16px;
+    width: 12px;
+    height: 11px;
+}
 .offer__text {
     font-family: 'Rubik',sans-serif;
     font-size: 13px;
