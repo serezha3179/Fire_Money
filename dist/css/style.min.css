@@ -400,12 +400,64 @@ body {
   margin-bottom: 33px;
 }
 
+@media (max-width: 1264px) {
+  .offer__cards {
+    display: block;
+  }
+}
 .offer__card {
+  position: relative;
   flex: 0 1 33.333%;
+  max-width: 408px;
   padding: 36px 57px 36px 57px;
   margin: 0px 14px;
   background: white;
   border-radius: 22px;
+  overflow: hidden;
+}
+
+@media (max-width: 1264px) {
+  .offer__card {
+    margin: 14px auto;
+  }
+}
+@media (max-width: 430px) {
+  .offer__card {
+    margin: 14px 10px;
+    padding: 36px 7% 36px 15%;
+  }
+}
+@media (max-width: 380px) {
+  .offer__card {
+    padding: 36px 7% 36px 10%;
+  }
+}
+.offer__card-ribbon {
+  position: absolute;
+  top: 15px;
+  left: -22px;
+  height: 21.48px;
+  width: 93.37px;
+  text-align: center;
+  transform: rotate(-45deg);
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.82;
+  color: white;
+  text-transform: uppercase;
+}
+
+.offer__card:nth-child(1) .offer__card-ribbon {
+  background: #FFC83E;
+}
+
+.offer__card:nth-child(2) .offer__card-ribbon {
+  background: #FF7B00;
+}
+
+.offer__card:nth-child(3) .offer__card-ribbon {
+  background: #FA5914;
 }
 
 .offer__card-title {
