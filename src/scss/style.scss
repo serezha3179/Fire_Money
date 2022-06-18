@@ -15,9 +15,10 @@
  .title {
     font-family: 'Rubik',sans-serif;
     font-size: 38px;
-    font-weight: normal;
-    line-height: 1.184;
+    font-weight: 600;
+    line-height: 1.185;
     color: #45515F;
+    text-align: center;
  }
  .container {
     max-width: 1283px;
@@ -118,14 +119,6 @@
         margin-bottom: 20px;
         text-transform: uppercase;
     }
-    /*
-    span img {
-        position: absolute;
-        top: -11px;
-        left: 10px;
-        width: 56px;
-        height: 56px;
-    }*/
     span::before {
         position: absolute;
         content: url('@img/hero/fire 1.png');
@@ -284,16 +277,10 @@
 ////////////////////////////////// offer /////////////////////////////////////
 
 .offer {
-    padding: 49px 0px;
+    padding: 49px 0px 22px;
     background: #F6F9FC;
 }
 .offer__title {
-    font-family: 'Rubik',sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.185;
-    text-align: center;
-    color: #45515F;
     margin-bottom: 36px;
 }
 .offer__cards {
@@ -404,10 +391,20 @@
     height: 11px;
 }
 .offer__text {
+    
     font-family: 'Rubik',sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 1.461;
     color: #45515F;
     text-align: center;
+    padding-bottom: 51px;
+    border-bottom: 1px solid rgba(69, 81, 95, 0.05);
+}
+///////////////////////////////////////////// money ////////////////////////////////////////
+.money {
+    padding: 22px 0px 22px;
+}
+.money__title {
+    margin-bottom: 72px;
 }
