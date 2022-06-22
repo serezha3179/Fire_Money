@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .nav {
         display: none;
     }
@@ -76,7 +76,7 @@
 .header__menu-burger {
     display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .header__menu-burger {
        display: block;
        margin-left: 15px;
