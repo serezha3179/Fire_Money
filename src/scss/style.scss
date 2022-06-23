@@ -135,7 +135,7 @@
         position: absolute;
         content: url('@img/hero/fire 1.png');
         top: -11px;
-        left: 10px;
+        left: 13px;
         width: 56px;
         height: 56px;
     }
@@ -161,6 +161,7 @@
          span {
             font-size: 18px;
             max-width: 330px;
+            padding: 8px 7px 8px 48px;
          }
     }
 }
@@ -890,7 +891,8 @@
     line-height: 1.187;
     color: #536473;
 }
-.service__item-text p:nth-child(1),p:nth-child(2) {
+.service__item-text p:nth-child(1),
+.service__item-text p:nth-child(2) {
     margin-bottom: 25px;
 }
 ///////////////////////////////////// FAQ ////////////////////////////////////////////
@@ -975,4 +977,98 @@
     transition: max-height .2s linear;
     max-height: 0;
     overflow: hidden;
+}
+/////////////////////////////////// get /////////////////////////////////////////
+.get {
+    padding: 61px 0px 0px;
+    background: white;
+    // background: url('@img/get/image_2.png') no-repeat 50% 100%;
+}
+@media (max-width: 1100px) {
+    .get {
+        background: white url('@img/get/image_2.png') no-repeat 50% 100%;
+    }
+}
+.get__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .get__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+}
+.get__inner {
+    // position: relative;
+}
+@media (max-width: 1100px) {
+    .get__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+    }
+}
+.get__title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.184;
+    color: #45515F;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.get__text {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.335;
+    color: #536473;
+    margin-bottom: 26px;
+    // max-width: 475px;
+}
+.get__text:last-of-type {
+    margin-top: -22px;
+}
+@media (max-width: 1100px) {
+    .get__text {
+        text-align: center;
+    }
+}
+.get__button-wrapper {
+}
+.get__button {
+    margin-bottom: 50px;
+}
+@media (max-width: 1100px) {
+        .get__button {
+            margin-bottom: 0px;
+        }
+}
+.get__image {
+    position: absolute;
+    bottom: 0;
+    right: -1%;
+}
+@media (max-width: 1100px) {
+    .get__image {
+        position: inherit;
+        width: 633px;
+        height: 422px;
+        // background: url('@img/get/image_2.png') no-repeat 70% 100%;
+    }
+}
+.get__img {
+    width: 633px;
+    height: 422px;
+    background: url('@img/get/image_2.png') no-repeat 70% 100%;
+}
+@media (max-width: 1100px) {
+    .get__img {
+        background: none;
+    }
 }
