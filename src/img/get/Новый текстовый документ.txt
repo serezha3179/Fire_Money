@@ -1,0 +1,22 @@
+get__img {
+    width: 633px;
+    height: 422px;
+}
+img, picture {
+    /* max-width: 100%; */
+    display: block;
+
+@media (max-width: 1100px)
+.get__image {
+    position: inherit;
+    overflow: hidden;
+}
+
+@media (max-width: 1100px)
+.get__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}

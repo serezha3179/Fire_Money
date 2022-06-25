@@ -4,14 +4,14 @@ faq.forEach(item => {
         // item.classList.toggle('active')
         if (!item.classList.contains('active')) {
             faq.forEach(item => {
-            item.classList.remove('active')
-            let a = item.querySelector('.FAQ__item-text')
+              let a = item.querySelector('.FAQ__item-text')
+              item.classList.remove('active')
             a.style.maxHeight = null;
             // a.style.display = "none";
           })
              item.classList.add('active')
         }else {
-             item.classList.remove('active')
+             item.classList.remove('active');
         }
         let submenu = item.querySelector('.FAQ__item-text')   
     if (submenu.style.maxHeight) {
