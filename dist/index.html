@@ -51,8 +51,44 @@
                             <div class="hero__image">
                                 <img src="img/hero/woman.png" alt="woman" class="hero__image-img">
                             </div>
-                            <div class="hero__item">
-                                <div class="hero__item-inner"></div>
+                            <div class="hero__item hero-item">
+                                <div class="hero-item__inner">
+                                    <div class="hero-item__title title__top">Cумма кредита</div>
+                                    <div class="range range_top">
+                                        <div class="range-num range-num_top">1 000 ₽</div>
+                                    <input type="range" class="hero-item__input_top" min="1" max="100" value="0">
+                                    </div>
+                                    <div class="hero-item__subtitles subtitles__top">
+                                        <span class="hero-item__subtitle">1 000 ₽ </span>
+                                        <span class="hero-item__subtitle">100 000 ₽ </span>
+                                    </div>
+                                    <div class="hero-item__title title__bottom">Cрок кредита</div>
+                                    <div class="range range_bottom">
+                                    <div class="range-num range-num_bottom">3 дней</div>
+                                    <input type="range" class="hero-item__input_bottom" min="3" max="30" value="0">
+                                    </div>
+                                    <div class="hero-item__subtitles subtitles__bottom">
+                                        <span class="hero-item__subtitle">3</span>
+                                        <span class="hero-item__subtitle">30</span>
+                                    </div>
+                                    <div class="hero-item__button-wrapper">
+                                        <a href="" class="hero-item__button button">Оформить заявку</a>
+                                    </div>
+                                    <div class="hero-item__items-wrapper">
+                                    <div class="hero-item__items">
+                                        <div class="hero-item__item">Вы берете<span>20 000 ₽</span></div>
+                                        <div class="hero-item__item">Дата возврата
+                                            <span>08 января 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-item__items">
+                                        <div class="hero-item__item">К возврату<span>25 650 ₽</span></div>
+                                        <div class="hero-item__item">Ежемесячный платеж
+                                            <span>5 650 ₽</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                 </div>
@@ -286,7 +322,7 @@
                 <div class="FAQ__wrapper">
                     <div class="FAQ__item active">
                         <div class="FAQ__item-title">Как долго обрабатывается заявка?</div>
-                        <div class="FAQ__item-text" style="max-height: 100%">Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает непосредственно с кредитными организациями, предоставляющими микрозаймы в случае приобретения платной услуги, вы получаете полный доступ к функциональности сервиса сроком на 1 год с момента активации услуги!
+                        <div class="FAQ__item-text" style="max-height: 100%;">Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает непосредственно с кредитными организациями, предоставляющими микрозаймы в случае приобретения платной услуги, вы получаете полный доступ к функциональности сервиса сроком на 1 год с момента активации услуги!
                             </div>
                     </div>
                     <div class="FAQ__item">
@@ -403,25 +439,11 @@
                             <P class="footer__footer-text">Imoneys Сredit ©2015–2022</P>
                             <P class="footer__footer-text">Все права на сайт защищены.</P>
                         </div>
-                        <!-- <div class="footer__footer-social"> 
-                            <div class="footer__footer-button">
-                                <a href="/" class="button">отписаться</a>
-                            </div>
-                            <div class="footer__footer-icons">
-                                <img src="img/footer/image_6.svg" alt="icon-youtube" class="footer__icons-img">
-                                <img src="img/footer/image_7.svg" alt="icon-instagram" class="footer__icons-img">
-                                <img src="img/footer/image_8.svg" alt="icon-facebook" class="footer__icons-img">
-                            </div>
-                        </div>-->
                         <div class="footer__footer-social">
-                            <!-- <div class="footer__footer-button"> -->
                                 <a href="/" class="footer__footer-button button">отписаться</a>
-                            <!-- </div> -->
-                            <!-- <div class="footer__footer-icons"> -->
                                 <a href="https://www.youtube.com/"><img src="img/footer/image_6.svg" alt="icon-youtube" class="footer__icons-img"></a>
                                 <a href="https://www.instagram.com/"><img src="img/footer/image_7.svg" alt="icon-instagram" class="footer__icons-img"></a>
                                 <a href="https://www.facebook.com/"><img src="img/footer/image_8.svg" alt="icon-facebook" class="footer__icons-img"></a>
-                            <!-- </div> -->
                         </div>
 
                     </div>
@@ -430,5 +452,15 @@
          </section>
       </div>
     <script src="js/app.min.js"></script>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close close__popup">X</a>
+                <div class="popup__title">Это модальное окно №1</div>
+                <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, distinctio. Illum cum eveniet iure officia, omnis, totam quis saepe repellendus itaque officiis pariatur explicabo excepturi quas dicta ea expedita accusantium!
+                Quibusdam praesentium hic tempore suscipit, quod repellat ut esse commodi iste excepturi. Minus doloribus at ex officia harum aliquam incidunt nostrum. Nostrum pariatur expedita cupiditate iure molestias ex repudiandae dignissimos.</div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>

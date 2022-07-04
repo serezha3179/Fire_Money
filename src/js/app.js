@@ -1,5 +1,7 @@
 import * as flsFunctions from './modules/functions.js';
 import './script.js';
+import './range.js';
+import './modal_window.js';
 
 flsFunctions.testWebP(function (support) {
     

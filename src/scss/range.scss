@@ -1,0 +1,41 @@
+.range { 
+    position: relative;
+    // width: 300px;
+    // height: 40px;
+    // background: yellow;
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #45515F;
+    margin-left: 10px;
+    }
+    .range input[type="range"] {
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    }
+    
+    .range .range-num {
+    width: 105px;
+    transform: translateX(-50%);
+    height: 20px;
+    //border: 1px solid black;
+    position: absolute;
+    padding: 1px;
+    // left: 0px;
+    // top: -58px;
+    text-align: center;
+    }
+    .range .range-num_top {
+        left: 3.3px;
+        top: -58px;
+        }
+    .range .range-num_bottom {
+            left: 12px;
+            top: -58px;
+            }
+    .hero-item__input {
+    // width: 300px;
+    }
+    
