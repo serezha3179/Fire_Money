@@ -1096,8 +1096,10 @@
     overflow: hidden;
     transition: .2s linear;
 }
+
 .FAQ__item.active .FAQ__item-text {
     margin-top: 17px;
+    max-height: none;
 }
 /////////////////////////////////// get /////////////////////////////////////////
 .get {
