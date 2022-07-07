@@ -1338,6 +1338,7 @@ body {
 
 .FAQ__item.active .FAQ__item-text {
   margin-top: 17px;
+  max-height: none;
 }
 
 .get {
